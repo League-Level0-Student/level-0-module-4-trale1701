@@ -30,8 +30,13 @@ for (int i = 0; i < pi.length(); i++) {
 	// *6. Get a character from the user using the getInputFromUser() method
 String answer = JOptionPane.showInputDialog("what is the forth digit of PI?");
 	// *7. Compare the users' char to the next digit of Pi
-
+if (answer.equalsIgnoreCase("1"))
 	// *8. If they are correct, print out "correct". If they are not, print "incorrect" to System.err.println
+{
+	System.out.println("correct");
+}
+else {System.out.println("wrong");}
+
 }
 	static void speak(char characterToSpeak) {
 		try {
